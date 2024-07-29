@@ -25,7 +25,7 @@ func passwordKeyboardInteractive(password string) ssh.KeyboardInteractiveChallen
 
 // 连接ssh
 func SshConnect(server Server) (*ssh.Client, error) {
-	// 创建SSH客户端配置
+	// ssh配置文件
 	config := &ssh.ClientConfig{
 		User: server.User,
 		Auth: []ssh.AuthMethod{
